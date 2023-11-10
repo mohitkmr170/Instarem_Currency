@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import Navigator from './navigators/main';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -23,17 +17,9 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <View style={styles.parentContainer}>
-        <Text>Instarem currency app</Text>
-      </View>
+      <Navigator />
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  parentContainer: {
-    flex: 1,
-  },
-});
 
 export default App;
