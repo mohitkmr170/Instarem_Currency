@@ -5,7 +5,9 @@ import {Home, SourceCurrency, SupportedCurrency} from '../screen';
 
 export default function AppStack() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{headerShown: false}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen
         name="SourceCurrency"
