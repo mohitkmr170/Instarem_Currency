@@ -10,8 +10,8 @@ export const styles = StyleSheet.create({
   searchBoxContainer: {
     flexDirection: 'row',
     paddingHorizontal: 12,
-    borderBottomColor: 'blue',
-    borderBottomWidth: 1,
+    borderBottomColor: 'cyan',
+    borderBottomWidth: 0.7,
     padding: 12,
     alignItems: 'center',
   },
